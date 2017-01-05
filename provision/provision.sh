@@ -727,6 +727,13 @@ PHP
   fi
 }
 
+vccircle_setup() {
+    git clone git@bitbucket.org:mmvplproducts/news-corp-india.git wp-content
+    git clone git@github.com:Automattic/vip-mu-plugins-public.git wp-content/mu-plugins
+    git submodule update --init --recursive
+    cd plugins/facebook-instant-articles
+    composer install --no-dev
+}
 wpsvn_check() {
   # Test to see if an svn upgrade is needed
   svn_test=$( svn status -u "/srv/www/wordpress-develop/" 2>&1 );
