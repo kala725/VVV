@@ -734,6 +734,7 @@ vccircle_setup() {
     rm -rf wp-content
     git clone git@bitbucket.org:mmvplproducts/news-corp-india.git wp-content
     git clone git@github.com:Automattic/vip-mu-plugins-public.git wp-content/mu-plugins
+    cd wp-content
     git submodule update --init --recursive
     cd plugins/facebook-instant-articles
     composer install --no-dev
