@@ -96,7 +96,8 @@ apt_package_check_list=(
 
   #Mailcatcher requirement
   libsqlite3-dev
-
+  #PreCommit Hooks
+  python-pip
 )
 
 ### FUNCTIONS
