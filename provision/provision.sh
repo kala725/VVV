@@ -729,6 +729,7 @@ PHP
 
 vccircle_setup() {
     cd /srv/www/wordpress-default
+    rm -rf wp-content
     git clone git@bitbucket.org:mmvplproducts/news-corp-india.git wp-content
     git clone git@github.com:Automattic/vip-mu-plugins-public.git wp-content/mu-plugins
     git submodule update --init --recursive
