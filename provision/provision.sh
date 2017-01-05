@@ -396,6 +396,9 @@ tools_install() {
   # config and actual path.
   echo "Adding graphviz symlink for Webgrind..."
   ln -sf "/usr/bin/dot" "/usr/local/bin/dot"
+
+  #Pre commit install
+  pip install pre-commit
 }
 
 nginx_setup() {
