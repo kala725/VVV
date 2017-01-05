@@ -728,6 +728,7 @@ PHP
 }
 
 vccircle_setup() {
+    cd /srv/www/wordpress-default
     git clone git@bitbucket.org:mmvplproducts/news-corp-india.git wp-content
     git clone git@github.com:Automattic/vip-mu-plugins-public.git wp-content/mu-plugins
     git submodule update --init --recursive
@@ -902,6 +903,7 @@ echo "Installing/updating WordPress Stable & Develop"
 wordpress_default
 wpsvn_check
 wordpress_develop
+vccircle_setup
 
 # VVV custom site import
 echo " "
