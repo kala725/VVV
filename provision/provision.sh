@@ -729,6 +729,7 @@ PHP
 
 vccircle_setup() {
     ssh-keyscan bitbucket.org >> ~/.ssh/known_hosts
+    ssh-keyscan github.com >> ~/.ssh/known_hosts
     cd /srv/www/wordpress-default
     rm -rf wp-content
     git clone git@bitbucket.org:mmvplproducts/news-corp-india.git wp-content
